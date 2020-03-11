@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                 sh 'docker-compose build --force-rm --no-cache'
+                 sh 'docker --version'
 
             }
         }
