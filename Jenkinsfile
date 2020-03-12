@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                 sh 'docker image ls'
+                 sh 'sudo docker image ls'
 
             }
         }
         stage('Up') {
             steps {
-                 sh 'docker-compose up'
+                 sh 'sudo docker-compose up'
             }
         }
     }
